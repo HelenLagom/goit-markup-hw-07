@@ -65,14 +65,14 @@ button {
   letter-spacing: 0.04em;
   cursor: pointer;
 }
-.container {
+/* .container {
   width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
-}
+} */
 
 /* Header */
-.page-header {
+/* .page-header {
   border-bottom: 1px solid var(--border-color);
 }
 .header-wrapper {
@@ -98,7 +98,7 @@ button {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.33;
+  line-height: 1.166;
   letter-spacing: 0.03em;
   color: var(--title-color);
   text-transform: uppercase;
@@ -164,7 +164,7 @@ button {
 .contact-phone-number:hover,
 .contact-phone-number:focus {
   color: var(--accent-color);
-}
+} */
 
 /* Hero */
 .hero {
