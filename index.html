@@ -23,24 +23,22 @@
     <header class="page-header">
       <div class="header-wrapper container">
         <nav class="page-nav">
-          <a class="logo link" href="./index.html"
+          <a class="logo" href="./index.html"
             ><span class="web">Web</span>Studio</a
           >
-          <ul class="menu list">
+          <ul class="menu">
             <li class="menu-item">
-              <a class="menu-link link active current" href="./index.html"
-                >Studio</a
-              >
+              <a class="menu-link active current" href="./index.html">Studio</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link link" href="./portfolio.html">Portfolio</a>
+              <a class="menu-link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link link" href="#">Contacts</a>
+              <a class="menu-link" href="#">Contacts</a>
             </li>
           </ul>
         </nav>
-        <button type="button" class="mobile-menu-open">
+        <button type="button" class="mobile-menu-open" data-menu-open>
           <svg class="mobile-menu-open_icon" width="32" height="22">
             <use class="burger" href="/images/icons.svg#icon-menu-burger"></use>
           </svg>
@@ -48,41 +46,80 @@
 
         <!-- Contact information -->
         <address class="contacts">
-          <ul class="menu list">
+          <ul class="menu">
             <li class="menu-item">
-              <a class="contact-mail link" href="mailto:info@devstudio.com"
+              <a class="contact-mail" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
             <li class="menu-item">
-              <a class="contact-phone-number link" href="tel:+11(000)111-11-11"
+              <a class="contact-phone-number" href="tel:+11(000)111-11-11"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
       </div>
-      <div class="mobile-menu">
-        <button class="mobile-menu_close-btn">
-          <svg class="mobile-menu_close-icon" width="8" height="8">
-            <use href="./images/icon.svg#icon-close-black"></use>
-          </svg>
-        </button>
-        <ul>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-        </ul>
-        <ul>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-        </ul>
-        <ul>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-        </ul>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu_close-btn" data-menu-close>
+            <svg class="mobile-menu_close-icon" width="8" height="8">
+              <use href="./images/icon.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <ul class="menu-chapter">
+            <li class="menu-item">
+              <a class="menu-link active" href="./index.html">Studio</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#">Contacts</a>
+            </li>
+          </ul>
+          <!-- <address> -->
+          <ul class="mobile-menu-contacts">
+            <li class="menu-item">
+              <a class="contact-phone-number" href="tel:+11(000)111-11-11"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="menu-item">
+              <a class="contact-mail" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <!-- </address> -->
+
+          <ul class="ftr-socials">
+            <li>
+              <a class="ftr-link" href="#"
+                ><svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a class="ftr-link" href="#"
+                ><svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a class="ftr-link" href="#"
+                ><svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a class="ftr-link" href="#"
+                ><svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -103,7 +140,7 @@
       <!-- <section class="advantages">
         <div class="advantages-wrapper container">
           <h2 class="visually-hidden section-title">Our advantages</h2>
-          <ul class="list advantages-list">
+          <ul class="advantages-list">
             <li class="advantages-item">
               <div class="advantages-icons">
                 <svg width="64" height="64">
@@ -164,7 +201,7 @@
       <!-- <section class="competence">
         <div class="competence-wrapper container">
           <h2 class="section-title competence-title">What are we doing</h2>
-          <ul class="list competence-list">
+          <ul class="competence-list">
             <li class="competence-item">
               <img
                 src="./images/examples/ex1.jpg"
@@ -197,7 +234,7 @@
       <!-- <section class="team">
         <div class="team-wrapper container">
           <h2 class="section-title team-title">Our Team</h2>
-          <ul class="list team-list">
+          <ul class="team-list">
             <li class="team-item">
               <img
                 src="./images/employees/mark1.jpg"
@@ -374,7 +411,7 @@
       <!-- <section class="clients">
         <div class="clients-wraper container">
           <h2 class="clients-title section-title">Customers</h2>
-          <ul class="clients-list list">
+          <ul class="clients-list">
             <li class="custom">
               <a href="#" class="custom-link">
                 <svg class="custom-icon" width="104" height="56">
@@ -561,7 +598,7 @@
         </form>
       </div>
     </div> -->
-
+    <script src="./js/mobile-menu.js"></script>
     <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>

@@ -530,7 +530,7 @@ button {
   font-weight: 500;
   color: var(--footer-filter-color);
 }
-
+/* 
 .ftr-socials {
   display: flex;
   justify-content: center;
@@ -554,7 +554,7 @@ button {
 .ftr-link:focus {
   background-color: #31d0aa;
   fill: var(--footer-filter-color);
-}
+} */
 
 .studio {
   color: var(--footer-filter-color);
@@ -598,12 +598,8 @@ button {
   outline: transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-/* .letter {
-  position: absolute;
-  top: 8px;
-  right: 24px;
-} */
-/* aria-label */
+
+/*alt for svg - aria-label */
 
 /* Modal window */
 .backdrop {
